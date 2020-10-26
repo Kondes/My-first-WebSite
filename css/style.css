@@ -1,0 +1,19 @@
+body {
+  background-color: #fff;
+  font-style: 16px;
+  color: aqua;
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: red;
+    font-style: 20px;
+    color: #fff;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    background-color: green;
+  }
+}
