@@ -36,6 +36,14 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-family: Georgia;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #4e5665;
+}
+
 .header__top {
   background-image: url("../image/header/cuba.jpg");
   height: 100vh;
@@ -121,8 +129,8 @@ body {
   line-height: 19px;
   margin: 0 6px;
   border-bottom: 4px solid transparent;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__list-link:hover {
@@ -139,10 +147,6 @@ body {
 }
 
 .reason__title {
-  font-size: 32px;
-  line-height: 38px;
-  text-align: center;
-  color: #4e5665;
   margin-bottom: 22px;
 }
 
@@ -182,5 +186,66 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
+}
+
+.about {
+  padding: 80px 0 0;
+}
+
+.about__title {
+  margin-bottom: 13px;
+}
+
+.about__text {
+  margin-bottom: 72px;
+}
+
+.about__item {
+  margin-bottom: 100px;
+  padding: 70px 0;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.about__item:nth-child(even) {
+  background-position: left;
+}
+
+.about__item:nth-child(even) .about__box {
+  margin-left: auto;
+}
+
+.about__box {
+  padding: 33px 40px 18px 40px;
+  background-color: #fff;
+  max-width: 470px;
+  position: relative;
+}
+
+.about__box::after, .about__box::before {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
+}
+
+.about__box::before {
+  background-image: url("/image/decor/decor-left.svg");
+  top: 19px;
+  left: 19px;
+}
+
+.about__box::after {
+  background-image: url("/image/decor/decor-right.svg");
+  bottom: 19px;
+  right: 19px;
+}
+
+.about__box-title {
+  font-family: Georgia;
+  font-size: 24px;
+  line-height: 25px;
+  color: #4e5665;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,52 @@
+.about {
+  padding: 80px 0 0;
+  &__title {
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    margin-bottom: 72px;
+  }
+  &__item {
+    margin-bottom: 100px;
+    padding: 70px 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    &:nth-child(even) {
+      background-position: left;
+    }
+    &:nth-child(even) .about__box {
+      margin-left: auto;
+    }
+  }
+  &__box {
+    padding: 33px 40px 18px 40px;
+    background-color: #fff;
+    max-width: 470px;
+    position: relative;
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 33px;
+      height: 33px;
+    }
+    &::before {
+      background-image: url('/image/decor/decor-left.svg');
+      top: 19px;
+      left: 19px;
+    }
+    &::after {
+      background-image: url('/image/decor/decor-right.svg');
+      bottom: 19px;
+      right: 19px;
+    }
+    &-title {
+      font-family: Georgia;
+      font-size: 24px;
+      line-height: 25px;
+      color: #4e5665;
+      margin-bottom: 20px;
+    }
+  }
+}
