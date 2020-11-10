@@ -201,7 +201,6 @@ body {
 }
 
 .about__item {
-  background-image: url("/image/decor/about2.jpg");
   margin-bottom: 100px;
   padding: 70px 0;
   background-repeat: no-repeat;
@@ -248,9 +247,5 @@ body {
   line-height: 25px;
   color: #4e5665;
   margin-bottom: 20px;
-}
-
-.about-img {
-  background-image: url("/image/decor/about1.jpg");
 }
 /*# sourceMappingURL=main.css.map */
