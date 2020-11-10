@@ -230,13 +230,13 @@ body {
 }
 
 .about__box::before {
-  background-image: url("/image/decor/decor-left.svg");
+  background-image: url("../image/decor/decor-left.svg");
   top: 19px;
   left: 19px;
 }
 
 .about__box::after {
-  background-image: url("/image/decor/decor-right.svg");
+  background-image: url("../image/decor/decor-right.svg");
   bottom: 19px;
   right: 19px;
 }
