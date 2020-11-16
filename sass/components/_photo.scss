@@ -23,3 +23,21 @@
     margin: 0 auto;
   }
 }
+.slick-arrow {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #ecb84c;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+.slick-prev {
+  left: -20px;
+}
+.slick-next {
+  right: -20px;
+}
