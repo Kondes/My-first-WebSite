@@ -154,6 +154,7 @@ body {
     display: none;
     padding-top: 60px;
     text-align: center;
+    border-bottom: 4px solid #ecb84c;
   }
   .menu {
     position: relative;
@@ -176,6 +177,10 @@ body {
 
 .menu__list-link {
   display: block;
+}
+
+.menu__list-link :hover {
+  border-top: 4px solid transparent;
 }
 
 .section-line {
