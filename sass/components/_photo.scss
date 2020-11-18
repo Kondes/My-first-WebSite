@@ -15,7 +15,9 @@
       height: 1px;
       background-color: rgba(208, 212, 216, 0.5);
       bottom: 0;
-      right: 36%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
     }
   }
   &__slider {
@@ -41,4 +43,12 @@
 }
 .slick-next {
   right: -20px;
+}
+@media (max-width: 700px) {
+  .slick-next {
+    right: 20px;
+  }
+  .slick-prev {
+    left: 20px;
+  }
 }

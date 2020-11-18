@@ -69,11 +69,11 @@
       }
     }
   }
-}
-.menu__btn {
-  display: none;
-}
 
+  &__btn {
+    display: none;
+  }
+}
 @media (max-width: 700px) {
   .header__title {
     font-size: 120px;
@@ -105,12 +105,33 @@
     background-color: #ffd600;
     height: 4px;
   }
+
+  .menu__list-link {
+    display: block;
+    border-top: 4px solid #ecb84c;
+    transition: all 0s;
+  }
+  .menu__list-link :hover {
+    border-bottom: 4px solid transparent;
+  }
 }
-.menu__list-link {
-  display: block;
-  // border-top: 4px solid #ecb84c;
-  // transition: all 0s;
+@media (max-width: 540px) {
+  .header__text {
+    display: none;
+  }
+  .header__top-inner {
+    border: 2px solid #ecb84c;
+  }
+  .header__top {
+    padding: 10px;
+  }
+  .header__title {
+    font-size: 100px;
+  }
 }
-.menu__list-link :hover {
-  border-top: 4px solid transparent;
+
+@media (min-width: 700px) {
+  .menu__list {
+    display: flex !important;
+  }
 }

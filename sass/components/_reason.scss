@@ -36,3 +36,12 @@
     }
   }
 }
+
+@media (max-width: 540px) {
+  .reason__statistic {
+    display: block;
+  }
+  .reason__statistic-item {
+    margin-bottom: 35px;
+  }
+}
